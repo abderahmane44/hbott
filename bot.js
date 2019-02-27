@@ -314,9 +314,9 @@ client.on("reachLimit", (limit)=> {
 
 
 
-const gamestats = [`Mazza Shop`,`Mazza Shop`,`Mazza Shop`,`Mazza Shop`]
+const gamestats = [`Florida | Brodcast`,`Florida | Brodcast`,`Florida | Brodcast`,`Florida | Brodcast`]
 var index = 0
-var timer = 10 // الوقت بالثواني لتغير الستريمنق
+var timer = 9 // الوقت بالثواني لتغير الستريمنق
 client.on("ready", ()=> {
         setInterval(function(){
         client.user.setGame(`${gamestats[index]}`,'https://www.twitch.tv/ACMBOT') 
