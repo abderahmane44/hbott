@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "-"; // ضع البريفكس الخاص بك هنا
+const prefix = "#"; // ضع البريفكس الخاص بك هنا
 
 
 
@@ -314,9 +314,9 @@ client.on("reachLimit", (limit)=> {
 
 
 
-const gamestats = [`Florida | Brodcast`,`Florida | Brodcast`,`Florida | Brodcast`,`Florida | Brodcast`]
+const gamestats = [`Mazza Shop`,`Mazza Shop`,`Mazza Shop`,`Mazza Shop`]
 var index = 0
-var timer = 9 // الوقت بالثواني لتغير الستريمنق
+var timer = 10 // الوقت بالثواني لتغير الستريمنق
 client.on("ready", ()=> {
         setInterval(function(){
         client.user.setGame(`${gamestats[index]}`,'https://www.twitch.tv/ACMBOT') 
