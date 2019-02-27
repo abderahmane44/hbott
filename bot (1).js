@@ -2,11 +2,11 @@ const Discord = require("discord.js");
 const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
-const prefix = "#";
+const prefix = "-";
 
-const devs = ["ي دي الاونر البوت"]
+const devs = ["538349275713634315"]
 
-const adminprefix = "#";
+const adminprefix = "-";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
@@ -119,7 +119,7 @@ guild.owner.send(`سيرفر : ${guild.name}
 });
 
 client.on('message', message => {
-  var prefix = "#";
+  var prefix = "-";
   if (message.author.omar) return;
   if (!message.content.startsWith(prefix)) return;
   var command = message.content.split(" ")[0];
@@ -168,7 +168,7 @@ message.guild.member(user).kick();
   
  
   client.on('message', message =>{
-    var prefix = "#";
+    var prefix = "-";
       if(message.author.bot) return;
       if(!message.content == (prefix+'clear'))
   if(!true) return;
@@ -204,7 +204,7 @@ message.guild.member(user).kick();
   
   
 client.on('message', async message =>{
-    var prefix = "#";
+    var prefix = "-";
   if (message.author.omar) return;
   if (!message.content.startsWith(prefix)) return;
   if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -258,7 +258,7 @@ client.on('message', async message =>{
   
   });
   client.on('message', async message =>{
-    var prefix = "#";
+    var prefix = "-";
   if (message.author.omar) return;
   if (!message.content.startsWith(prefix)) return;
   if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -287,7 +287,7 @@ client.on('message', async message =>{
   
   });
 client.on('message', message => {
-    var prefix = '#';
+    var prefix = '-';
 if (message.content.startsWith(prefix + "nickname" && prefix + "nick")) {
   let args = message.content.split(' ').slice(1).join(' ');
   let args2 = message.content.split(' ').slice(2).join(' ');
@@ -402,7 +402,7 @@ message.react("❌")
   
   
       client.on('message', message => {
-        var prefix = "#";
+        var prefix = "-";
         if(message.content.startsWith(prefix + 'mutevoice')) {
           if(!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**:x: ").then(m => m.delete(5000));
           if(!message.guild.member(client.user).hasPermission("MUTE_MEMBERS")) return message.reply("**I Don't Have `MUTE_MEMBERS` Permission**").then(msg => msg.delete(6000))
@@ -421,7 +421,7 @@ message.react("❌")
       }
     });
     client.on('message', message => {
-      var prefix = "+";
+      var prefix = "-";
       if(message.content.startsWith(prefix + 'unmutevoice')) {
         if(!message.member.hasPermission("MUTE_MEMBERS")) return message.channel.sendMessage("**ليس لديك صلاحية لاعطاء ميوت صوتي**:x: ").then(m => m.delete(5000));
         if(!message.guild.member(client.user).hasPermission("MUTE_MEMBERS")) return message.reply("**I Don't Have `MUTE_MEMBERS` Permission**").then(msg => msg.delete(6000))
@@ -443,7 +443,7 @@ message.react("❌")
   
 client.on('message', message => {
   if(!message.channel.guild) return;
-  var prefix = "#";
+  var prefix = "-";
 if(message.content.startsWith(prefix + 'move')) {
      if (message.member.hasPermission("MOVE_MEMBERS")) {
 if(!message.guild.member(client.user).hasPermission("MOVE_MEMBERS")) return message.reply("**I Don't Have `MOVE_MEMBERS` Permission**").then(msg => msg.delete(6000))
@@ -488,7 +488,7 @@ if(!message.guild.member(client.user).hasPermission("MOVE_MEMBERS")) return mess
 
   
 client.on('message', message => {
-  var prefix = "#";
+  var prefix = "-";
   if(message.content.startsWith(prefix + 'move all')) {
    if (!message.member.hasPermission("MOVE_MEMBERS")) return message.channel.send('**لايوجد لديك صلاحية سحب الأعضاء**');
      if(!message.guild.member(client.user).hasPermission("MOVE_MEMBERS")) return message.reply("**لايوجد لدي صلاحية السحب**");
@@ -506,7 +506,7 @@ client.on('message', message => {
    }
      });
   client.on("message", message => {
-      var prefix = "#";
+      var prefix = "-";
       const command = message.content.split(" ")[0];
    
       if(command == prefix+"voicekick"){
