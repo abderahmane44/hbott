@@ -97,7 +97,6 @@ Fire bot
 『f!color 140/انشاء 140 لوم』
 『f!ct /انشاء روم كتابي』4
 『f!cv /انشاء روم صوتي』
-『f!bc /برودكاست』
 **
 
 
@@ -848,7 +847,7 @@ client.on("message", (message) => {
    }
 });
 
-var prefix = "f!";
+var prefix = "-";
 
 client.on('message', message => {
   if (message.author.bot) return;
@@ -1062,7 +1061,7 @@ client.on('message', message => {
 });
 
 
-var prefix = "f!"
+var prefix = "-"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -1104,7 +1103,7 @@ client.on('message', message => {
  
 
  
-var prefix = "f!"
+var prefix = "-"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
